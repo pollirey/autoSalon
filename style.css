@@ -1,19 +1,21 @@
 /* Подключение шрифтов */
- @font-face {
+@font-face {
     font-family: 'Helvetica';
     src: url(./assets/fonts/Helvetica/helvetica_regular.otf);
- }
+}
 
- @font-face {
+@font-face {
     font-family: 'Helvetica-bold';
     src: url(./assets/fonts/Helvetica/helvetica_bold.otf);
- }
+}
 
 /* Общие стили */
 * {
     margin: 0;
     padding: 0;
-};
+}
+
+;
 
 body {
     font-family: Helvetica, sans-serif, Arial;
@@ -34,9 +36,10 @@ button {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
+    position: relative;
+}
 
-  .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -44,8 +47,8 @@ button {
 /* Стили шапки сайта*/
 
 .header {
-  background-color: #212121;
-  padding: 46px 0;
+    background-color: #212121;
+    padding: 46px 0;
 }
 
 .header .container {
@@ -84,7 +87,7 @@ button {
     align-items: center
 }
 
-.hero__first{
+.hero__first {
     flex-direction: column;
     width: 755px;
 }
@@ -115,10 +118,13 @@ button {
 .hero__background {
     background-image: url("./assets/images/main-car.png");
     position: absolute;
-    margin-left: 578px;
-    width: 100%;
+    margin-left: 645px;
+    width: 909px;
     height: 572px;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 /* Стили каталога */
@@ -167,7 +173,7 @@ button {
     flex-direction: column;
 }
 
-.cars__menu {  
+.cars__menu {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -179,30 +185,30 @@ button {
 .cars__card {
     flex-direction: column;
     margin-left: 24px;
-    
+
 }
 
 .cars__img {
-width: 567px;
-height: 364px;
-} 
+    width: 567px;
+    height: 364px;
+}
 
 .cars__img--first {
     background-image: url("./assets/images/1.jpg");
     background-size: cover;
-    
+
 }
 
 .cars__img--second {
     background-image: url("./assets/images/2.jpg");
     background-size: cover;
-   
+
 }
 
 .cars__img--third {
     background-image: url("./assets/images/3.jpg");
     background-size: cover;
- 
+
 }
 
 .cars__title {
@@ -228,7 +234,7 @@ height: 364px;
 
 .cars__item {
     flex-direction: column;
-    gap: 35px;
+    margin-right: 35px;
     list-style-type: none;
 }
 
@@ -261,7 +267,6 @@ height: 364px;
     position: relative;
     overflow: hidden;
     min-height: 800px;
-    display: flex;
     align-items: center;
     width: 100%;
 }
@@ -278,9 +283,9 @@ height: 364px;
 .order__background {
     background-image: url("./assets/images/order-car.png");
     position: absolute;
-    left: 0;
+    left: -360px;
     top: 0;
-    width: 55%;
+    width: 1218px;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -293,7 +298,7 @@ height: 364px;
     z-index: 2;
     width: 457px;
     padding: 60px 0;
-    margin-left: auto;
+    margin-right: 0;
     flex-shrink: 0;
 }
 
@@ -314,11 +319,11 @@ height: 364px;
     color: #D4D4D4;
     font-size: 16px;
     font-family: 'Helvetica', sans-serif, Arial;
-  padding: 24px 20px;
-  border: 1px #FFFFFF solid;
-  border-radius: 0;
-  background: #212121;
-  text-align: left;
+    padding: 24px 20px;
+    border: 1px #FFFFFF solid;
+    border-radius: 0;
+    background: #212121;
+    text-align: left;
 }
 
 .order__list {
@@ -329,29 +334,29 @@ height: 364px;
     width: 344px;
 
 
-    
+
 }
 
 .order__name {
-   color: #D4D4D4;
+    color: #D4D4D4;
     font-size: 16px;
     font-family: 'Helvetica', sans-serif, Arial;
-  padding: 24px 20px;
-  border: 1px #FFFFFF solid;
-  border-radius: 0;
-  background: #212121;
-  text-align: left;
+    padding: 24px 20px;
+    border: 1px #FFFFFF solid;
+    border-radius: 0;
+    background: #212121;
+    text-align: left;
 }
 
 .order__phone {
     color: #D4D4D4;
     font-size: 16px;
     font-family: 'Helvetica', sans-serif, Arial;
-  padding: 24px 20px;
-  border: 1px #FFFFFF solid;
-  border-radius: 0;
-  background: #212121;
-  text-align: left;
+    padding: 24px 20px;
+    border: 1px #FFFFFF solid;
+    border-radius: 0;
+    background: #212121;
+    text-align: left;
 }
 
 .order__button {
