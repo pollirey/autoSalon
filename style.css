@@ -29,6 +29,12 @@ button {
     border: 0;
 }
 
+.btn {
+    font-family: Helvetica, sans-serif, Arial;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .wrapper {
     width: 1920px;
     margin: 0 auto;
@@ -59,14 +65,14 @@ button {
 .navigation {
     display: flex;
     gap: 65px;
+    margin-left: 177px;
+    margin-right: 465px;
 }
 
 .nav-link {
     color: #ffffff;
     font-size: 14px;
     font-family: 'Helvetica-bold', sans-serif, Arial;
-    margin-left: 177px;
-    margin-right: 465px;
     text-transform: uppercase;
 }
 
@@ -96,7 +102,8 @@ button {
     color: #ffffff;
     font-size: 80px;
     font-family: 'Helvetica', sans-serif, Arial;
-    width: 755px;
+    width: 766px;
+    font-weight: 400;
 }
 
 .hero__subtitle {
@@ -104,15 +111,18 @@ button {
     font-size: 24px;
     font-family: 'Helvetica', sans-serif, Arial;
     padding: 40px 0 60px 0;
-    width: 478px;
+    width: 488px;
 }
 
-.hero__button {
+.btn--yellow  {
     color: #000000;
     font-size: 24px;
-    font-family: 'Helvetica', sans-serif, Arial;
     background-color: #F8FF23;
     padding: 20px 35px;
+}
+
+.btn--yellow:hover {
+    background-color: #c5cb2c;
 }
 
 .hero__background {
@@ -131,6 +141,7 @@ button {
 
 .cars {
     background-color: #0C0C0C;
+    padding: 130px 0;
 }
 
 .cars .container {
@@ -141,7 +152,6 @@ button {
     color: #ffffff;
     font-size: 60px;
     font-family: 'Helvetica', sans-serif, Arial;
-    padding-top: 130px;
 }
 
 .cars__catalog {
@@ -158,15 +168,17 @@ button {
     gap: 15px;
 }
 
-.cars__nav {
+.btn--transparent {
     color: #FFFFFF;
     border: 1px #FFFFFF solid;
     padding: 16px 24px;
     text-align: center;
+    background-color: transparent;
 }
 
-.cars__nav--active {
+.btn--transparent:hover {
     color: #F8FF23;
+    border-color: #F8FF23;
 }
 
 .cars__cards {
@@ -180,35 +192,20 @@ button {
     padding: 20px;
     background-color: #212121;
     width: 996px;
+    box-sizing: border-box;
+    height: 404px;
 }
 
 .cars__card {
     flex-direction: column;
     margin-left: 24px;
-
+    display: flex;
 }
 
 .cars__img {
     width: 567px;
     height: 364px;
-}
-
-.cars__img--first {
-    background-image: url("./assets/images/1.jpg");
     background-size: cover;
-
-}
-
-.cars__img--second {
-    background-image: url("./assets/images/2.jpg");
-    background-size: cover;
-
-}
-
-.cars__img--third {
-    background-image: url("./assets/images/3.jpg");
-    background-size: cover;
-
 }
 
 .cars__title {
@@ -230,15 +227,22 @@ button {
     display: flex;
     align-items: center;
     margin-top: 65px;
+    gap: 37px
 }
 
 .cars__item {
     flex-direction: column;
-    margin-right: 35px;
     list-style-type: none;
 }
 
 .cars__time {
+    color: #D4D4D4;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif, Arial;
+    margin-bottom: 5px;
+}
+
+.cars__text {
     color: #D4D4D4;
     font-size: 16px;
     font-family: 'Helvetica', sans-serif, Arial;
@@ -247,16 +251,18 @@ button {
 .cars__price {
     color: #ffffff;
     font-size: 24px;
-    font-family: 'Helvetica', sans-serif, Arial;
 }
 
-.cars__button {
+.btn--white {
     background-color: #FFFFFF;
     color: #000000;
     font-size: 24px;
-    font-family: 'Helvetica', sans-serif, Arial;
     padding: 20px 96px;
     margin-top: 20px;
+}
+
+.btn--white:hover {
+    background-color: #efeded;
 }
 
 /* Стили формы */
@@ -269,6 +275,8 @@ button {
     min-height: 800px;
     align-items: center;
     width: 100%;
+    padding-top: 159px;
+    padding-bottom: 130px;
 }
 
 .order .container {
@@ -296,8 +304,7 @@ button {
 .order__form {
     position: relative;
     z-index: 2;
-    width: 457px;
-    padding: 60px 0;
+    width: 486px;
     margin-right: 0;
     flex-shrink: 0;
 }
@@ -315,7 +322,7 @@ button {
     margin-top: 40px;
 }
 
-.order__cars {
+.order__input {
     color: #D4D4D4;
     font-size: 16px;
     font-family: 'Helvetica', sans-serif, Arial;
@@ -324,6 +331,12 @@ button {
     border-radius: 0;
     background: #212121;
     text-align: left;
+    outline: 0;
+}
+
+.order__input::placeholder {
+    color: #D4D4D4;
+    font-size: 16px;
 }
 
 .order__list {
@@ -332,39 +345,6 @@ button {
     margin-top: 60px;
     gap: 15px;
     width: 344px;
-
-
-
-}
-
-.order__name {
-    color: #D4D4D4;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif, Arial;
-    padding: 24px 20px;
-    border: 1px #FFFFFF solid;
-    border-radius: 0;
-    background: #212121;
-    text-align: left;
-}
-
-.order__phone {
-    color: #D4D4D4;
-    font-size: 16px;
-    font-family: 'Helvetica', sans-serif, Arial;
-    padding: 24px 20px;
-    border: 1px #FFFFFF solid;
-    border-radius: 0;
-    background: #212121;
-    text-align: left;
-}
-
-.order__button {
-    color: #000000;
-    font-size: 24px;
-    font-family: 'Helvetica', sans-serif, Arial;
-    background-color: #F8FF23;
-    padding: 20px 86px;
 }
 
 /* Стили подвала */
@@ -372,7 +352,6 @@ button {
     background-color: #212121;
     padding: 47px 0;
     border-top: 1px #5F5F5F solid;
-    margin-top: 130px;
 }
 
 .footer .container {
