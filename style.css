@@ -179,6 +179,11 @@ button {
     border-color: #F8FF23;
 }
 
+.btn--transparent.active {
+    color: #F8FF23;
+    border-color: #F8FF23;
+}
+
 .cars__cards {
     flex-direction: column;
 }
